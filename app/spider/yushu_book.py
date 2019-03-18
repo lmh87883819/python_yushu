@@ -3,7 +3,7 @@ from flask import current_app
 
 class YuShuBook:
     isbn_url = 'http://t.yushu.im/v2/book/isbn/{}'
-    keyword_url = 'http://t.yushu.im/v2/book/search?q={}&count={}&start={} '
+    keyword_url = 'http://t.yushu.im/v2/book/search?q={}&count={}&start={}'
 
     @classmethod
     def searchByIsbn(cls, isbn):
