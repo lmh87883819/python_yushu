@@ -5,7 +5,7 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object('app.secure')
     app.config.from_object('app.setting')
-    app.config['JSON_AS_ASCII'] = False
+    
     register_blueprint(app)
 
     db.init_app(app)
